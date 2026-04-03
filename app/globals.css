@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
+  --font-body:    'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080c0f;
+  color: #c8d8e0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0d1317; }
+::-webkit-scrollbar-thumb { background: #1a2530; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #00ff88; }
+
+/* Green glow effect for key numbers */
+.glow-green {
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+/* Panel style */
+.panel {
+  background: #111820;
+  border: 1px solid #1a2530;
+  border-radius: 8px;
+}
+
+/* Signal badge */
+.signal-bullish {
+  background: rgba(0, 255, 136, 0.1);
+  color: #00ff88;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.signal-bearish {
+  background: rgba(255, 59, 92, 0.1);
+  color: #ff3b5c;
+  border: 1px solid rgba(255, 59, 92, 0.3);
+}
+
+.signal-neutral {
+  background: rgba(255, 184, 0, 0.1);
+  color: #ffb800;
+  border: 1px solid rgba(255, 184, 0, 0.3);
+}
+
+/* Animated grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 255, 136, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
