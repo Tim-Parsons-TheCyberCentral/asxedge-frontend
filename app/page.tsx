@@ -7,7 +7,7 @@ import DataStats from '@/components/dashboard/DataStats'
 import { TrendingUp, TrendingDown, Zap, Brain, BarChart2, ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 
-export const revalidate = 60
+export const dynamic = "force-dynamic"
 
 async function getData() {
   try {

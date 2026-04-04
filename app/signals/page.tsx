@@ -3,7 +3,7 @@ import SignalCard from '@/components/signals/SignalCard'
 import { getSignals, getSignalsSummary } from '@/lib/api'
 import { Zap, TrendingUp, TrendingDown, Minus } from 'lucide-react'
 
-export const revalidate = 60
+export const dynamic = "force-dynamic"
 
 async function getData() {
   try {
