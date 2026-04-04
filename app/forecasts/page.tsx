@@ -4,6 +4,7 @@ import { TrendingUp, TrendingDown, Minus, Target } from 'lucide-react'
 
 export const dynamic = "force-dynamic"
 
+
 async function getData() {
   try {
     const [d5, d20, d63, d252] = await Promise.all([

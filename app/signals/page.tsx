@@ -5,6 +5,7 @@ import { Zap, TrendingUp, TrendingDown, Minus } from 'lucide-react'
 
 export const dynamic = "force-dynamic"
 
+
 async function getData() {
   try {
     const [all, bullish, bearish, summary] = await Promise.all([

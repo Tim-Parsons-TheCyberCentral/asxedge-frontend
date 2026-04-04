@@ -9,6 +9,7 @@ import Link from 'next/link'
 
 export const dynamic = "force-dynamic"
 
+
 async function getData() {
   try {
     const [signals, macro, watchlist, summary, statsRes] = await Promise.all([

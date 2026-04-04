@@ -8,6 +8,7 @@ import { formatDistanceToNow } from 'date-fns'
 
 export const dynamic = "force-dynamic"
 
+
 async function getData() {
   try {
     const [macro, signals, forecasts5d, news, statsRes] = await Promise.all([
