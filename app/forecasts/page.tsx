@@ -2,7 +2,7 @@ import Navbar from '@/components/ui/Navbar'
 import { getForecasts } from '@/lib/api'
 import { TrendingUp, TrendingDown, Minus, Target } from 'lucide-react'
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 
 async function getData() {

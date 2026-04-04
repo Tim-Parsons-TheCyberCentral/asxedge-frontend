@@ -6,7 +6,7 @@ import DataStats from '@/components/dashboard/DataStats'
 import { TrendingUp, TrendingDown, Newspaper } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 
 async function getData() {

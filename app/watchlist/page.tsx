@@ -2,7 +2,7 @@ import Navbar from '@/components/ui/Navbar'
 import { getWatchlist } from '@/lib/api'
 import { TrendingUp, TrendingDown, BarChart2 } from 'lucide-react'
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 
 export default async function WatchlistPage() {
