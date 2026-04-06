@@ -28,6 +28,7 @@ export default function Navbar() {
             { href: '/forecasts', label: 'Forecasts' },
             { href: '/watchlist', label: 'Watchlist' },
             { href: '/agent',     label: 'AI Agent' },
+            { href: '/accuracy',  label: 'Accuracy' },
           ].map(({ href, label }) => (
             <Link
               key={href}
@@ -63,6 +64,7 @@ export default function Navbar() {
             { href: '/forecasts', label: 'Forecasts' },
             { href: '/watchlist', label: 'Watchlist' },
             { href: '/agent',     label: 'AI Agent' },
+            { href: '/accuracy',  label: 'Accuracy' },
           ].map(({ href, label }) => (
             <Link
               key={href}
