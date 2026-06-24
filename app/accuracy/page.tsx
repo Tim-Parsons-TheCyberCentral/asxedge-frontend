@@ -196,9 +196,8 @@ export default function AccuracyPage() {
             </p>
             <p className="font-mono text-sm text-edge-muted/60 mt-2 max-w-lg mx-auto">
               Forecasts are audited automatically once their target date passes.
-              The first 5-day forecasts will be auditable from{' '}
-              <span className="text-edge-green">April 10, 2026</span>.
-              Check back then to see how accurate the predictions were.
+              No audited results match the current filters yet — try widening
+              the confidence, horizon, or direction filters above.
             </p>
           </div>
         )}
@@ -325,7 +324,7 @@ export default function AccuracyPage() {
                 No audited forecasts match these filters yet.
               </p>
               <p className="font-mono text-xs text-edge-muted/60 mt-1">
-                First 5-day forecasts become auditable on April 10, 2026.
+                Try widening the filters above to see more results.
               </p>
             </div>
           ) : (
